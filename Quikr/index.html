@@ -6,17 +6,284 @@
     <link href="kendo/styles/kendo.common.min.css" rel="stylesheet"/>
     <link href="kendo/styles/kendo.default.min.css" rel="stylesheet"/>                                                
     <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+    <link href="project/style/main.css" rel="stylesheet"/>
+    <link href="project/style/style.css" rel="stylesheet"/>
  
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.all.min.js"></script>
     <script src="project/script/lib/everlive.all.min.js"></script>
+    <script src="project/script/lib/jquery.validate.js"></script>
     <script src="project/script/app/app.js"></script>
+    <script src="project/script/app/postad.js"></script>
     
 </head>
 <body>
-    <div data-role="view">
-                        jkjhk                          
+    <!--Home-->
+    <div data-role="view" id="home" data-transition="slide:right">
+        
+        <!--Header-->
+        <div data-role="header">
+            <div data-role="navbar" class="nvbar">
+                <a data-role="button" data-bind="click:backBTN" data-align="left" class="btn"><img src="project/image/set.png" class="img"></a>
+                <span class="spnAd">Project</span>
+               <a data-role="button" data-bind="click:backBTN" data-align="right" class="btn"><img src="project/image/search.png" class="img1"></a>
+            </div>
+        </div>
+        
+        <!--Content-->
+        <div data-role="content" id="homeCont">
+             <div class="AdWidh">
+                 <div class="postDiv">
+                     <div class="titleDiv">
+                         <p>
+                             Sell or Advertise
+                         </p>
+                     </div>
+                    <div class="adDiv">
+                        <a href="#postad1"><p>Post Free Ad</p></a>
+                    </div>
+                 </div>
+                 <h3>Buy or Rent</h3>
+                 <div class="itemDiv">
+                     <div class="itmRow">
+                         <div class="itmDiv1"><img src="project/image/car.jpg"/></div>
+                         <div class="itmDiv2"> <img src="project/image/elect.png"/></div>
+                         <div class="itmDiv3"> <img src="project/image/ent.png"/></div>
+                     </div>
+                     
+                     <div class="itmRow1">
+                         <div class="itmDiv1"><img src="project/image/edu.png"/></div>
+                         <div class="itmDiv2"><img src="project/image/job.png"/></div>
+                         <div class="itmDiv3"><img src="project/image/mob.png"/></div>
+                     </div>
+                     
+                      <div class="itmRow2">
+                         <div class="itmDiv1"><img src="project/image/lifestyle.png"/></div>
+                         <div class="itmDiv2"><img src="project/image/real.png"/></div>
+                         <div class="itmDiv3"><img src="project/image/matri.jpg"></div>
+                     </div>
+                     
+                     <div class="itmRow3">
+                         <div class="itmDiv1"><img src="project/image/service.jpg"></div>
+                         <div class="itmDiv2"></div>
+                         <div class="itmDiv3"></div>
+                     </div>
+                     
+                 </div>
+                 <div class="recom">
+                     <h3>Recommended for you</h3>
+                     <div class="altDiv">
+                         <div class="altTxt">
+                             <span>
+                                 You don't have any alerts.Create an Alert by clicking the icon on the right and get real time updates.
+                             </span>
+                         </div>
+                         <div class="altLog">
+                            <a>
+                                <img src="project/image/bell.jpg"/>
+                            </a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+    
+    <!--*********************************************************************************************************************/-->
+    
+    <!--Post Free Ad-->
+    <div data-role="view" id="postad1" data-title="1/2" data-model="app.postService.viewModel" data-show="app.postService.viewModel.show">
+        
+        <!--Header-->
+        <div data-role="header">
+            <div data-role="navbar" class="nvbar">
+                <a data-role="button" data-bind="click:backBTN" data-align="left" class="btn"><img src="project/image/back.png" style="width:22px;height:22px;"></a>
+                <span class="spnAd">Post Free Ad</span>
+                <span data-role="view-title" data-align="right" class="spnTitle"></span>
+            </div>
+        </div>
+        
+        <!--Content-->
+        <div data-role="content" id="content">
+            <form id="postAdfrm">
+                <div class="AdWidh">
+                    
+                    <div id="cameraDv">
+                        <h3>Ad image and Description</h3>
+                        <div class="pic">
+                            <!--Ad image 1-->
+                            <div id="picture1" class="postImage">
+                                <div class="imgDiv">
+                                    <a data-bind="click:deleteImage"><img id="smallImage1" src="" /></a>
+                                </div> 
+                            </div>
+                            <!--Ad image 2-->
+                            <div id="picture2" class="postImage">
+                                <div class="imgDiv">
+                                    <a data-bind="click:deleteImage"><img id="smallImage2" src="" /></a>
+                                </div> 
+                            </div>
+                            
+                            <div id="cameraBtn" style="width:30%;height:80px;margin-left:8px;float:left;display:block;">
+                                <a data-role="button" data-rel="modalview" href="#cameraPopOver" style="width:100%;height:75px;background-image:url('project/image/cc.png');background-size:100% 100%;"></a> 
+                            </div>
+                            <input type="hidden" name="imageVal" id="imageVal" data-bind="value:hideVal" value=""/>
+                        </div>
+                        
+                        <p id="msg">
+                            *Click on the image for Delete
+                        </p>
+
+                       <!-- <p style="font-size:11px;font-weight:bold">
+                        Ads* width images get 2 times more responses.
+                        </p>-->
+                    </div>
+                    
+                    <div id="fldDv">
+                        <div class="frmfld1">
+                            <p>
+                                <input type="text" name="adtitle" id="adtitle" data-bind="value:adtitle" class="txtbox" placeholder="Enter Ad Title (min 4 words)" required/>
+                            </p>
+                            <p>
+                                <textarea placeholder="Enter Ad Descriptions (min 8 words)" data-bind="value:addescript" name="AdDescription" id="AdDescription" class="txtarea" required></textarea>
+                            </p>
+                            <h3>Location</h3>
+                            <p>
+                                <input name="state" id="state" data-bind="value:state" class="dropfld" orignal-title="State" required/>
+                            </p>
+                            <p>
+                                <input name="city" id="cityId" data-bind="value:city" class="dropfld" style="display:none" orignal-title="City"/>
+                            </p>
+                            <p>
+                                <input type="text" name="address" data-bind="value:address" id="address" style="display:none" class="txtbox disp" placeholder="Enter Address Details" required/>
+                            </p>
+                            <p>
+                                <input type="Submit" data-role="button" data-bind="click:postadSubmitFirst" value="Next" class="subBTN"/>
+                            </p><br>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div data-role="modalview" id="cameraPopOver" style="width:70%;height:115px;border-radius:10px;" data-modal="false">
+        <div style="width:100%;">
+            <p>
+                <a data-role="button" id="capturePhotoButton" data-click="close" style="width:100%;">Capture Photo</a>
+            </p>
+            <p>
+                <a data-role="button" id="getPhotoFromAlbumButton" data-click="close" style="width:100%;">Choose from Album</a> 
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        function close(){
+         	$("#cameraPopOver").data("kendoMobileModalView").close();     
+        }
+    </script>
+    
+    <!--*********************************************************************************************************************/-->
+    
+    <div data-role="view" id="postAd2" data-title="2/2" data-model="app.postService.viewModel" data-show="app.postService.viewModel.show">
+        <!--Header-->
+        <div data-role="header">
+            <div data-role="navbar" class="nvbar">
+                <a data-role="backbutton" data-align="left" class="btn"><img src="project/image/back.png" style="width:22px;height:22px;"></a>
+                <span class="spnAd">Post Free Ad</span>
+                <span data-role="view-title" data-align="right" class="spnTitle"></span>
+            </div>
+        </div>
+        
+        <!--Content-->
+        <div data-role="content">
+           <form id="postAdfrm2">
+               <div class="AdWidh">
+                   <h3>Other Ad Details</h3>
+                   <div class="catDv">
+                        <p>
+                       	 <input name="category" id="category" data-bind="value:category" class="dropfld" orignal-title="Category" required/>
+                        </p>
+                        <p>
+                       	 <input name="subcategory" id="subcategory" data-bind="value:subcategory" class="dropfld" orignal-title="Subcategory" required/>
+                        </p>
+                   </div>
+                   
+                   <div id="categorizedFld">
+                       <p>
+                           <input type="radio" name="product" value="sell" />
+                           <span>
+                               I want to sell <span id="sellText"></span>
+                           </span>
+                       </p>
+                       <p>
+                           <input type="radio" name="product" value="Buy"/>
+                           <span>
+                               I want to Buy <span id="buyText"></span>
+                           </span>
+                       </p>
+                       <h4>You are</h4>
+                       <p>
+                           <input type="radio" name="person" value="Individual"/>
+                           <span>
+                               Individual
+                           </span>
+                       </p>
+                       <p>
+                           <input type="radio" name="person" value="Dealer"/>
+                           <span>
+                               Dealer
+                           </span>
+                       </p>
+                        <h4>Condition</h4>
+                       <p>
+                           <input type="radio" name="condn" value="used"/>
+                           <span>
+                               Used
+                           </span>
+                       </p>
+                       <p>
+                           <input type="radio" name="condn" value="new"/>
+                           <span>
+                               New
+                           </span>
+                       </p>
+                       <p>
+                       	 <input name="brand" id="brand" data-bind="value:brand" class="dropfld" orignal-title="Brand" required/>
+                       </p>
+                       <p>
+                       	 <input type="text" name="price" id="price" data-bind="value:price" placeholder="Price" maxlength="10" style="width:100%;" class="txtbox" orignal-title="Mobile Number" required/>
+                       </p>
+                   </div>
+                   <div id="car">
+                       
+                   </div>
+                   
+                   
+                   
+                   
+                   
+                   
+                   <h3>Your Contact Information</h3>
+                    <div class="contDv">
+                        <p>
+                             <input type="text" name="name" id="name" data-bind="value:name" placeholder="Your Name" class="txtbox" style="width:100%" orignal-title="Your Name" required/>
+                        </p>
+                        <p>
+                       	 <input type="email" name="email" id="email" data-bind="value:email" placeholder="Email Address" class="txtbox" style="width:100%" orignal-title="Email Address" required/>
+                        </p>
+                        <p>
+                       	 <input type="text" name="mobile" id="mobile" data-bind="value:mobileNumber" placeholder="Mobile Number" maxlength="10" style="width:100%;" class="txtbox" orignal-title="Mobile Number" required/>
+                        </p>
+                         <p>
+                            <input type="Submit"  data-role="button" data-bind="click:dropDownvalidationSecondFormField"  value="Post your Ad" class="subBTN"/>
+                         </p>
+                    </div>
+               </div>
+           </form>
+        </div>
     </div>
 </body>
 </html>

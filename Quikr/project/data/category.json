@@ -1,0 +1,12 @@
+ [
+    {"name":"Car & Bikes","id":1},
+    {"name":"Mobile & tabs","id":2},
+    {"name":"Electronics","id":3},
+    {"name":"Education","id":4},
+    {"name":"Entertainment","id":5},
+    {"name":"Jobs","id":6},
+    {"name":"Home & Lifestyle","id":7},
+    {"name":"Real state","id":8},
+    {"name":"Matrimonial","id":9},
+    {"name":"Services","id":10}
+]

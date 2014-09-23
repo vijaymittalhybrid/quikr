@@ -1,0 +1,24 @@
+[
+	{"stateId":15,"stateName":"Andhra Pradesh"},
+	{"stateId":21,"stateName":"Asam"},
+	{"stateId":2,"stateName":"Bihar"},
+	{"stateId":3,"stateName":"Chhattisgarh"},
+	{"stateId":19,"stateName":"Delhi"},
+	{"stateId":4,"stateName":"Gujrat"},
+	{"stateId":20,"stateName":"Haryana"},
+	{"stateId":5,"stateName":"Jharkhand"},
+	{"stateId":6,"stateName":"Jammu and Kashmir"},
+	{"stateId":7,"stateName":"Kerala"},
+	{"stateId":8,"stateName":"Rajsthan"},
+	{"stateId":9,"stateName":"Madhyay Pradesh"},
+	{"stateId":10,"stateName":"Maharashtra"},
+	{"stateId":11,"stateName":"Odisha"},
+	{"stateId":12,"stateName":"Punjab"},
+	{"stateId":13,"stateName":"Telangana"},
+	{"stateId":14,"stateName":"Tamil Nadu"},
+	{"stateId":1,"stateName":"Uttar Pradesh"},
+	{"stateId":16,"stateName":"Utrakhand"},
+	{"stateId":17,"stateName":"Karnataka"},
+	{"stateId":18,"stateName":"West Bengal"}
+]
+ 

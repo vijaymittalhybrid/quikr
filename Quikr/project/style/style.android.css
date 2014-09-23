@@ -1,0 +1,486 @@
+
+.docs-header .km-widget .docs-popup{ background-size:100%;}
+@media (min-width:0px) and (max-width:1280px) {
+.logLogo {margin:6% auto 5%;height:100px;background-size:95%;}
+.loginSection ul li label input[type=text]:not(.k-input), .loginSection ul li label input[type=password]{padding:0.8em !important; font-size:1em !important;}
+.loginSection .km-listview-wrapper+*:not(.km-listview-wrapper) input[type=submit]{padding: 1.05em !important; font-size:1.2em !important;}
+html body .loginSection .km-list:not(.km-virtual-list)>li {margin: 0 0 3%;}
+.km-ios .km-list > li, .km-flat .km-list > li {font-size:1.2em;}  
+.home .km-rightitem {width:6%;}
+.schedulePopup h3 {font-size: 1.7em;}
+.schedulePopup .scheduleSection .km-listview-wrapper ul li .k-select {background-size: 5%;background-position: 97% 50%;}
+.schedulePopup .scheduleSection .km-listview-wrapper ul li + li .k-select {background-size: 7%;background-position: 97% 50%;}
+.matches-view li .row3 a.appy, .matches-view li .row3 a.pending {background-size:15%; padding:3em 0em 1em; font-size:1em;}
+.matches-view li .row1 img {width: 50%;}
+.matches-logo {background-size: 15%;height: 70px;}
+.documentContent .km-listview-wrapper ul li .sharedfolder, .documentContent .km-listview-wrapper ul li .Folder {background-position: 15px 7px; padding:25px 0%;background-size: 50%;}
+.documentContent .km-listview-wrapper ul li .docx, .documentContent .km-listview-wrapper ul li .default-icon, .documentContent .km-listview-wrapper ul li .jpg, .documentContent .km-listview-wrapper ul li .doc, .documentContent .km-listview-wrapper ul li .txt, .documentContent .km-listview-wrapper ul li .xls, .documentContent .km-listview-wrapper ul li .pdf, .documentContent .km-listview-wrapper ul li .png {background-position: 28px 5px; padding:25px 0%;background-size:37%;}
+.docs-header .km-widget .docs-docu {width:76%;padding: 2% 0 0;font-size: 1.2em;}
+.docs-header .km-widget .docs-search{ width:6%; background-position:center 0; background-size:80%; margin:1.2% 0 0;}
+.docs-header .km-widget .refresh-com { width:7%; background-position:7px 0; background-size:60%; margin:1.1% 0 0;}
+.docs-header .km-widget .refresh-loading { width:8%; background-position:center 0; background-size:50%; margin:1.9% 0 0;}
+.inner-docs-back {padding: 1em .7em;}
+.schedulePopup {padding: 8px 3% 0 3.3%;}
+.matches-view li .row2 p a { font-size:1.2em;}
+.reqWindow + .doc-content ol {font-size:1.1em;}
+#dynamicCl.km-popup-wrapper {width: 220px !important;}
+#tabstrip-download-file .downloadWrpr {color: #333; text-align:center;}
+#tabstrip-download-file .downloadWrpr {padding: 2% 2% 0;color: #333;background-color: #fff;}
+#tabstrip-download-file .download-file-name {text-align: center;padding: 0 0 20px;}
+#tabstrip-download-file .status {text-indent: -9000px;background-image: url(images/download-loader.gif);background-repeat: no-repeat;background-position: center 0px;}
+#tabstrip-download-file .downloadWrpr a {background-image: url(images/cross.png); background-repeat:no-repeat; background-size:50%; border-radius:2px; float:right; margin:5px 5px 0 0; height:30px; width:30px; border:0; text-indent:-9000px; background-position:center 8px; background-color:#ddd; text-shadow:0;}
+#tabstrip-download-file .download-file-name .docx {padding:15% 0 0;background-image: url(images/dos.png)!important; background-repeat:no-repeat; background-position:center 7px; }
+#tabstrip-download-file .download-file-name .jpg, #tabstrip-download-file .download-file-name .jpeg {padding:15% 0 0;background-image: url(images/jpg.png)!important; background-repeat:no-repeat; background-size:10%;background-position:center 7px;}
+#tabstrip-download-file .download-file-name .doc  {padding:15% 0 0;background-image: url(images/dos.png)!important; background-repeat:no-repeat; background-size:10%; background-position:center 7px;}
+#tabstrip-download-file .download-file-name .txt {padding:15% 0 0;background-image: url(images/text.png)!important; background-repeat:no-repeat; background-size:10%!important; background-position:center 7px;}
+#tabstrip-download-file .download-file-name .gif  {padding:15% 0 0;background-image: url(images/GIF-icon.png)!important; background-repeat:no-repeat; background-size:10%!important; background-position:center 7px;}
+#tabstrip-download-file .download-file-name .xls, #tabstrip-download-file .download-file-name .xlsx {padding:15% 0 0;background-image: url(images/xls.png)!important; background-repeat:no-repeat; background-size:10%; background-position:center 7px;}
+#tabstrip-download-file .download-file-name .rtf  {padding:15% 0 0;background-image: url(images/rtf-2-icon.png)!important; background-repeat:no-repeat; background-size:10%; background-position:center 7px;} 
+#tabstrip-download-file .download-file-name .ppt, #tabstrip-download-file .download-file-name .pptx  {padding:15% 0 0;background-image: url(images/ppt-icon.png)!important; background-repeat:no-repeat; background-size:10%; background-position:center 7px;}  
+#tabstrip-download-file .download-file-name .pdf  {padding:15% 0 0;background-image: url(images/pdf.png)!important; background-repeat:no-repeat; background-size:10%; background-position:center 7px;}
+#tabstrip-download-file .download-file-name .png  {padding:15% 0 0;background-image: url(images/png.png) !important; background-repeat:no-repeat; background-size:10%; background-position:center 7px;}
+#tabstrip-download-file .download-file-name .unkown {padding:15% 0 0;background-image: url(images/unknown.png); background-repeat:no-repeat; background-size:10%; background-position:center 7px;}
+#blackBlk .desbrdIcon .span {/*background-image: url("images/dshbord-bgIcon.png"); background-repeat:no-repeat; */ background-size:7.3%;display: block;padding:2.3% 11% 3% 9%;color: #fff;font-size: 1.7em;}
+/*********Android css***************/
+.btngr {padding:22px 8px;font-size: 1.5em;}
+.docs-header .km-widget .docs-docu {width:76%; padding:1.5% 0 0 ;font-size: 1.2em;}
+.docs-header .km-widget .docs-back {background-position: 10px 8px;width: 7.5%;height:80px;background-size:87%;}
+.docs-header .km-widget .docs-popup { width:60px;}
+.folder-events .scheduleSection .buttonArea .km-button{padding: 1em 0;}
+#dynamicCl.km-popup-wrapper {width:330px !important;}
+#tabstrip-download-file.modal-mess-Popup {padding: 0;width: 98%;margin: 0 0 0 1.3%;}
+#tabstrip-Setting .docs-back {height: 85px;background-size:75%;background-position: 10px 10px;width: 10%;margin-top: 0rem!important;margin-bottom: 0rem !important;}
+#tabstrip-Setting .docs-docu {padding: 2% 0 0;font-size: 1.2em;}
+#tabstrip-Setting .Setting-ac, #tabstrip-Setting ul#settingpage li {padding: 3% 0 2% 10%;background-size: 5%;background-position:27px 12px;}
+#stps ul li article {width:300px;}
+#stps ul li article span { font-size:12px; padding-bottom:8px;}
+#tabstrip-download-file.modal-mess-Popup {padding: 0;width: 98%;margin: 0 0 0 1.3%;height: 48%;}
+#tabstrip-forgot-pass .view-content { margin-top:7em;}
+.forgtpass { font-size:1.1em; padding-top:25px;}
+#newuser {margin:2em 0;}
+#newuser ul.km-listinset li {margin-bottom: 2%;}
+#newuser ul.km-listinset li input[type=text], #newuser ul.km-listinset li select{padding:1em!important;}
+#repypm.repaydetail ul li {width: 20%;}
+#repypm ul li {font-size:0.9em; font-weight:normal;}
+#repypm ul li span.tx{ font-weight:bold; padding:5px 0 0;}
+#dashview .tooltip { width:300px;}
+#tabstrip-forgot-pass .view-content p{font-size:1em;}
+#dashview .tooltip span {font-size:12px; padding-bottom:8px;}
+.documentContent .km-listview-wrapper ul li table td:nth-child(2) {height:60px;}
+.documentContent .km-listview-wrapper ul li table td:nth-child(3) a.docs-popup, .documentContent .km-listview-wrapper ul li table td:nth-child(3) a.k-state-border-down { background-size:55%;background-position: center 6px;}
+#aplicn_frm {padding: 30px 2%;}
+}
+@media (min-width:0px) and (max-width:1024px) {
+#tabstrip-download-file {padding:2%; height:47%; background-color:#fff;}
+#tabstrip-download-file .downloadWrpr { padding:2%; color:#333; background-color:#fff;}
+#tabstrip-download-file .km-scroll-wrapper { background-color:#fff;}
+#tabstrip-download-file.modal-mess-Popup { padding: 0;width: 98%;margin: 0 0 0 1.3%;height:48%;}
+#tabstrip-download-file .download-file-name { text-align:center; padding:0 0 20px;}
+#tabstrip-download-file .status {text-indent:-9000px;background-image: url(images/download-loader.gif); background-repeat:no-repeat; background-position:center 0px;}
+#tabstrip-download-file .downloadWrpr a {background-image: url(images/cross.png); background-repeat:no-repeat; background-size:50%; border-radius:2px; float:right; margin:5px 5px 0 0; height:30px; width:30px; border:0; text-indent:-9000px; background-position:center 8px; background-color:#ddd; text-shadow:0;}
+#tabstrip-download-file .download-file-name .docx {padding:15% 0 0;background-image: url(images/dos.png)!important; background-repeat:no-repeat; background-position:center 7px; }
+#tabstrip-download-file .download-file-name .jpg, #tabstrip-download-file .download-file-name .jpeg {padding:15% 0 0;background-image: url(images/jpg.png)!important; background-repeat:no-repeat; background-size:10%;background-position:center 7px;}
+#tabstrip-download-file .download-file-name .doc  {padding:15% 0 0;background-image: url(images/dos.png)!important; background-repeat:no-repeat; background-size:10%; background-position:center 7px;}
+#tabstrip-download-file .download-file-name .txt {padding:15% 0 0;background-image: url(images/text.png)!important; background-repeat:no-repeat; background-size:10%!important; background-position:center 7px;}
+#tabstrip-download-file .download-file-name .gif  {padding:15% 0 0;background-image: url(images/GIF-icon.png)!important; background-repeat:no-repeat; background-size:10%!important; background-position:center 7px;}
+#tabstrip-download-file .download-file-name .xls, #tabstrip-download-file .download-file-name .xlsx {padding:15% 0 0;background-image: url(images/xls.png)!important; background-repeat:no-repeat; background-size:10%; background-position:center 7px;}
+#tabstrip-download-file .download-file-name .rtf  {padding:15% 0 0;background-image: url(images/rtf-2-icon.png)!important; background-repeat:no-repeat; background-size:10%; background-position:center 7px;} 
+#tabstrip-download-file .download-file-name .ppt, #tabstrip-download-file .download-file-name .pptx  {padding:15% 0 0;background-image: url(images/ppt-icon.png)!important; background-repeat:no-repeat; background-size:10%; background-position:center 7px;}  
+#tabstrip-download-file .download-file-name .pdf  {padding:15% 0 0;background-image: url(images/pdf.png)!important; background-repeat:no-repeat; background-size:10%; background-position:center 7px;}
+#tabstrip-download-file .download-file-name .png  {padding:15% 0 0;background-image: url(images/png.png) !important; background-repeat:no-repeat; background-size:10%; background-position:center 7px;}
+#tabstrip-download-file .download-file-name .unkown {padding:15% 0 0;background-image: url(images/unknown.png); background-repeat:no-repeat; background-size:10%; background-position:center 7px;}
+#blackBlk .desbrdIcon .span {background-position: left 0%;}
+#blackBlk .desbrdIcon .span{font-size: 1.8em;}
+.logo  { margin:3% auto;}
+.documentClick .km-view-title a{padding: 15px 0px 0px;}
+.schedulePopup .scheduleSection .km-listview-wrapper ul li .k-select{ background-size:5%; background-position:97% 50%;}
+.schedulePopup .scheduleSection .km-listview-wrapper ul li + li .k-select{ background-size:7%; background-position:97% 50%;}
+.schedulePopup h3{font-size: 1.7em;}
+.schedulePopup .scheduleSection .scall-text{font-size: 1em;}
+.btngr{ padding: 16px 8px; font-size:1.3em;}
+.stpcurrntAc p a{ padding:15px 15px 15px 35px !important; background-size:15% !important; background-position:5px 11px !important;}
+.matches-logo{ background-size:15%; height:70px;}
+.home .popup { width:75px; height:75px;}
+.docs-header .km-widget .docs-back {height:80px; background-size:82%; background-position:10px 10px; width:10%;margin-top:0rem!important;margin-bottom:0rem !important;}
+.docs-header .km-widget .docs-docu { width:71%; padding:2% 0 0; font-size:1.2em;}
+.docs-header .km-widget .docs-search{ width:6%; background-position:center 0; background-size:95%; margin:1.2% 0 0;}
+.docs-header .km-widget .refresh-com { width:8%; background-position:center 0; background-size:60%; margin:1.5% 0 0;}
+.docs-header .km-widget .refresh-loading { width:8%; background-position:center 0; background-size:50%; margin:1.9% 0 0;}
+.modal-mess-Popup {padding:0; width:98%; margin:0 0 0 1.3%;}
+.modal-mess-one {padding:0; width:98%; margin:0 0 0 1.3%; }
+.documentContent .km-listview-wrapper ul li .sharedfolder, .documentContent .km-listview-wrapper ul li .Folder {background-position: 15px 7px;padding: 15px 0%;background-size: 60%;}
+.documentContent .km-listview-wrapper ul li .docx, .documentContent .km-listview-wrapper ul li .default-icon, .documentContent .km-listview-wrapper ul li .jpg, .documentContent .km-listview-wrapper ul li .doc, .documentContent .km-listview-wrapper ul li .txt, .documentContent .km-listview-wrapper ul li .xls, .documentContent .km-listview-wrapper ul li .pdf, .documentContent .km-listview-wrapper ul li .png {background-position: 25px 5px;padding: 18px 0%;background-size: 44%;}
+.documentContent ul.export {list-style:none;} 
+.documentContent ul.export li span {padding:17px 10px 17px 10%;background-size:8.3%;}
+.documentContent ul.export li .folder {background-image: url(images/folder.png); background-repeat:no-repeat;background-position:5px 7px;}
+#blackBlk .desbrdIcon {padding: 1%;display: block;}
+#blackBlk .desbrdIcon .dasimg{width:11%;}
+.documentClick .km-view-title a span { font-size:1.3em;}
+.docs-header .km-widget #docs-filter  {width:83%; margin:0.7em 0 0;}
+.km-tablet .km-filter-wrap {max-width: 37em;}
+.home .km-rightitem {width:8%;}
+.documentContent .km-listview-wrapper ul li span {padding: 12px 10px 12px 13%;    }
+.inner-docs-back {padding: .8em .7em;}
+.matches-view li .row3 a.pending{background-size: 16%;padding: 3em 0em 0.5em;font-size: 1em;} 
+#tabstrip-Setting .docs-back{height: 80px;background-size: 82%;background-position: 10px 10px;width: 10%;margin-top: 0rem!important;margin-bottom: 0rem !important;}
+#tabstrip-Setting .docs-docu {padding: 2% 0 0;font-size: 1.2em;}
+#tabstrip-Setting .Setting-ac, #tabstrip-Setting ul#settingpage li{padding:3% 0 2% 10%;background-size: 5%;background-position: 22px 10px;}
+#blackBlk .desbrdIcon .span {/*background-image: url("images/dshbord-bgIcon.png"); background-repeat:no-repeat; */ background-size:9%;display: block;padding:3% 11% 4%;color: #fff;font-size: 1.5em;}
+}
+@media (min-width:0px) and (max-width:800px) {
+.documentContent .km-listview-wrapper ul li .sharedfolder, .documentContent .km-listview-wrapper ul li .Folder {}
+.documentContent .km-listview-wrapper ul li span{ padding:12px 10px 12px 13%;}
+.documentContent .km-listview-wrapper ul li .docx, .documentContent .km-listview-wrapper ul li .default-icon, .documentContent .km-listview-wrapper ul li .jpg, .documentContent .km-listview-wrapper ul li .doc, .documentContent .km-listview-wrapper ul li .txt, .documentContent .km-listview-wrapper ul li .xls, .documentContent .km-listview-wrapper ul li .pdf, .documentContent .km-listview-wrapper ul li .png {background-position:16px 5px;background-size:47%;}
+.docs-header .km-widget .docs-search{ width:6%; margin:0 2%;background-position: center 11px;}
+.docs-header .km-widget .refresh-com {width:8%;background-position: 2px 4px;background-size:67%; margin:0.3em 0 0;}
+.docs-header .km-widget .refresh-loading {width: 8%;}
+#dynamicCl.km-flat .km-header .km-navbar { padding: 0 1% 1%;}
+.docs-header .km-widget .docs-docu{ width:64%; padding:1.7% 0 0 ; font-size:1em;}
+.docs-header .km-widget .docs-back{background-position: left 73%;background-size:95%; width:10%; height:65px;}
+.docs-header .km-widget #docs-filter .km-filter-wrap { background-position:center 35px;}
+.logLogo { margin:35% auto 20%;}
+.docs-header .km-widget #docs-filter { margin:0.7em 0 0;}
+.docs-header .km-widget #docs-filter .km-filter-wrap input { font-size:0.8em;}
+.home .km-rightitem {width:11%;}
+.matches-view li .row3 a.appy, .matches-view li .row3 a.pending {background-size: 20%;padding: 2.5em 0em 0.5em;font-size: 1em;}
+.inner-docs-back {padding: .6em .7em;}
+.matches-view li .row2 p a { font-size:1em;}
+#dynamicCl.km-popup-wrapper {width:190px !important;}
+/*******Android css************/
+.folder-events .scheduleSection .buttonArea .km-button{padding:0.8em 0;}
+#tabstrip-download-file.modal-mess-Popup { padding: 0;width: 98%;margin: 0 0 0 1.3%;height:22%;}
+#tabstrip-Setting .docs-back {height: 80px;background-size: 88%;}
+.matches-logo {background-size: 20%;height: 65px;}
+#tabstrip-forgot-pass .view-content { margin-top:18em;}
+#newuser {margin: 4em 0;}
+#newuser ul.km-listinset li {margin-bottom:5%;}
+#newuser ul.km-listinset li input[type=text], #newuser ul.km-listinset li select{padding:1.5em!important;}
+#dashview .tooltip { width:250px;}
+.documentContent .km-listview-wrapper ul li table td:nth-child(2) {height:64px;width: 65%;}
+.documentContent .km-listview-wrapper ul li .sharedfolder, .documentContent .km-listview-wrapper ul li .Folder {background-size:66%;background-position: 7px 7px; padding:15px 0;}
+.documentContent .km-listview-wrapper ul li table td:nth-child(3) a.docs-popup, .documentContent .km-listview-wrapper ul li table td:nth-child(3) a.k-state-border-down {background-size: 80%;}
+#aplicn_frm, #aplicn_btm {padding: 30px 5%;}
+#aplicn_frm .rws.rw2 p {padding-right:0px;}
+#aplicn_frm input[type="text"], #aplicn_frm .rws.rw2 .ipsm3{ width:100%}
+#aplicn_frm .rw_lin.hlp p .IN6 {width: 100%;}
+}
+@media (min-width:0px) and (max-width:768px) {
+.logLogo {margin: 34% auto 10%;}
+.documentContent .km-listview-wrapper ul li .Folder {}
+.documentContent .km-listview-wrapper ul li .docx, .documentContent .km-listview-wrapper ul li .default-icon, .documentContent .km-listview-wrapper ul li .jpg, .documentContent .km-listview-wrapper ul li .doc, .documentContent .km-listview-wrapper ul li .txt, .documentContent .km-listview-wrapper ul li .xls, .documentContent .km-listview-wrapper ul li .pdf, .documentContent .km-listview-wrapper ul li .png {background-position: 28px 5px; padding:15px 0%;}
+.docs-header .km-widget .docs-search {width: 7%;margin: 1% 0.5% 0 2%;background-position: center 4px;}
+.docs-header .km-widget .refresh-com {width:11%;background-position: center 6px;}
+.docs-header .km-widget .refresh-loading {background-position: center 10px; width:11%;}
+.schedulePopup {padding: 8px 1.7% 0 2.2%}
+.reqWindow + .doc-content ol {font-size:1em;}
+.matches-view li .row3 a.pending{background-size: 20%;padding: 2.5em 0em 0.5em;font-size: 1em;} 
+#tabstrip-Setting .docs-back{height: 62px;width: 10%;background-position: center 0px;}
+#tabstrip-Setting .docs-docu {padding-left: 2%;}
+#tabstrip-Setting .Setting-ac, #tabstrip-Setting ul#settingpage li{padding: 4% 0 4% 12%;background-size: 7%;background-position: 22px 10px;}
+#tabstrip-download-file.modal-mess-Popup {height: 23%;}
+.matches-logo {background-size:23%;height: 60px;}
+#repypm.repaydetail ul li { width:33%;}
+#repypm ul li span.tx {height:30px;}
+#newuser ul.km-listinset li select {background-size:8%;}
+}
+@media (min-width:0px) and (max-width:640px) { 
+.logo { margin:3% auto;}
+.logLogo { margin:40% auto 10%;}
+html body .loginSection .km-list:not(.km-virtual-list)>li { margin-bottom:2%;}
+.documentClick .km-view-title a {padding: 5px 0px 0px;}
+.documentClick .km-view-title a span{ padding-top:10px;}
+#blackBlk .desbrdIcon .dasimg {width: 10%;}
+#blackBlk .desbrdIcon .span {font-size: 1.2em;}
+#blackBlk .desbrdIcon .span span {padding: 2% 0 0;}
+#blackBlk .desbrdIcon {padding: 2%;}
+.home .km-rightitem { height:100%; right:0;width: 12%;}
+#blackBlk .desbrdIcon .span {/*background-image: url("images/dshbord-bgIcon.png"); background-repeat:no-repeat; */ background-size:11%;display: block;padding:2% 13% 4%;color: #fff;font-size: 1.35em;}
+/*******Android css************/
+.docs-header .km-widget .docs-docu { width:63%; font-size:1em; padding:2% 0 0;}
+#blackBlk .desbrdIcon .span {background-size: 9%; font-size:1.5em;padding: 3% 13% 3% 11%;}
+.btngr {padding:9px 8px;font-size: 1.1em;}
+.documentContent .km-listview-wrapper ul li .sharedfolder, .documentContent .km-listview-wrapper ul li .Folder {padding:5px 0%;background-position: 5px 7px;}
+.documentContent .km-listview-wrapper ul li .docx, .documentContent .km-listview-wrapper ul li .default-icon, .documentContent .km-listview-wrapper ul li .jpg, .documentContent .km-listview-wrapper ul li .doc, .documentContent .km-listview-wrapper ul li .txt, .documentContent .km-listview-wrapper ul li .xls, .documentContent .km-listview-wrapper ul li .pdf, .documentContent .km-listview-wrapper ul li .png {background-position:15px 7px;padding: 15px 0; background-size:52%;}
+#tabstrip-files-events.modal-mess-Popup {}
+.home .km-rightitem {width: 12%;}
+.modal-mess-Popup {padding:0; width:98%; margin:0 0 0 1.3%;}
+.modal-mess-one {padding:0; width:98%; margin:0 0 0 1.3%; }
+.logLogo {margin: 4% auto;height: 60px;background-size: 50%;}
+#tabstrip-download-file.modal-mess-Popup {}
+#tabstrip-Setting .docs-docu {font-size:0.9em;padding: 1.2% 0 0;}
+#tabstrip-Setting .docs-back {width: 12%;background-position: 5px 7px;background-size:87%;}
+.schedulePopup h3 {font-size:15px;}
+.schedulePopup .scheduleSection .scall-text {font-size:11px;}
+.schedulePopup .scheduleSection .km-listview-wrapper ul li .k-picker-wrap .k-input {border-radius: 0;height: auto;} 
+#tabstrip-download-file.modal-mess-Popup {height:59%;}
+#tabstrip-forgot-pass .view-content { margin-top:1.2em;}
+#stps ul li article {width:260px;}
+#stps ul li article span { font-size:10px; padding-bottom:8px;}
+#newuser ul.km-listinset li {margin-bottom: 3%;}
+#newuser ul.km-listinset li input[type=text], #newuser ul.km-listinset li select {padding: 1em!important;}
+#newuser {margin: 2em 0;}
+.logLogo {margin: 1% auto;}
+.forgtpass {padding: 9px 0 5px;}
+.documentContent .km-listview-wrapper ul li table td:nth-child(3) a.docs-popup, .documentContent .km-listview-wrapper ul li table td:nth-child(3) a.k-state-border-down { background-size:80%;background-position: center 6px;}
+.documentContent .km-listview-wrapper ul li table td:nth-child(2) {height:50px; width:80%}
+}
+
+@media (min-width:0px) and (max-width:600px) { 
+.docs-header .km-widget .docs-search { width:8%; margin:0;}
+.docs-header .km-widget .refresh-com, .docs-header .km-widget .refresh-loading { width:11%; margin:0; background-position:center 7px;background-size: 62%;}
+.docs-header .km-widget .refresh-loading { background-position: center 13px;background-size:48%;}
+.docs-header .km-widget .docs-back { height:53px;}
+.documentContent .km-listview-wrapper ul li span {padding: 12px 10px 12px 16%;}
+.documentContent .km-listview-wrapper ul li .docx, .documentContent .km-listview-wrapper ul li .default-icon, .documentContent .km-listview-wrapper ul li .jpg, .documentContent .km-listview-wrapper ul li .doc, .documentContent .km-listview-wrapper ul li .txt, .documentContent .km-listview-wrapper ul li .xls, .documentContent .km-listview-wrapper ul li .pdf, .documentContent .km-listview-wrapper ul li .png {background-position: 13px 5px; background-size:56%;}
+.documentContent ul.export {list-style:none;} 
+.documentContent ul.export li span {padding:12px 10px 12px 15%;background-size: 12%;}
+.documentContent ul.export li .folder {background-image: url(images/folder.png); background-repeat:no-repeat;background-position:5px 7px;}   
+.documentClick .km-view-title a span{ padding-top:13px; font-size:1.3em;}    
+.docs-header .km-widget .docs-search {width: 7%;margin: 1% 0% 0 2%;background-size:100%;background-position: center 2px;}
+.docs-header .km-widget #docs-filter {margin: 0.2em 0 0;}
+.km-ios .km-list > li, .km-flat .km-list > li {font-size: 1em;}
+.matches-view li .row2 p a { font-size:0.9em;}
+#dynamicCl.km-popup-wrapper {width: 220px !important;}
+/*******Android css************/
+.docs-header .km-widget .docs-docu { width:63%; font-size:1em; padding:1.2% 0 0;}
+.modal-mess-Popup {padding:0; width:98%; margin:0 0 0 1.3%; }
+.modal-mess-one {padding:0; width:98%; margin:0 0 0 1.3%; }
+.folder-events .scheduleSection .buttonArea .km-button{padding:0.6em 0;}
+.docs-header .km-widget .docs-popup {background-image: url(../styles/images/ic_action_overflow.png); text-indent:-9000px; width:40px; background-position:center center; height:40px; background-repeat:no-repeat; margin:0; padding:5px; border:0; background-color:transparent;  border-radius:0;}
+#blackBlk .desbrdIcon .span {/*background-image: url("images/dshbord-bgIcon.png"); background-repeat:no-repeat; */ background-size:9.7%;display: block;padding:3% 13% 5%;color: #fff;font-size: 1.2em;}
+.btngr {padding: 7px 8px;font-size: 1.1em;}
+.documentContent .km-listview-wrapper ul li .docx, .documentContent .km-listview-wrapper ul li .default-icon, .documentContent .km-listview-wrapper ul li .jpg, .documentContent .km-listview-wrapper ul li .doc, .documentContent .km-listview-wrapper ul li .txt, .documentContent .km-listview-wrapper ul li .xls, .documentContent .km-listview-wrapper ul li .pdf, .documentContent .km-listview-wrapper ul li .png {padding: 11px 0%;}
+.documentContent .km-listview-wrapper ul li .sharedfolder, .documentContent .km-listview-wrapper ul li .Folder {padding: 11px 0%;background-size:75%;}
+.home .km-rightitem {width:13%;}
+.home .popup {height: 60px;}
+#tabstrip-Setting .docs-back {background-position: center 10px;}
+#tabstrip-Setting .docs-docu {font-size:1em; padding:1.2% 0 0;}
+#tabstrip-Setting .docs-back{height: 53px;background-size:88%;}
+.logLogo {margin:35% auto 15%;height:85px;background-size:60%;}
+.loginSection ul li label input[type=text]:not(.k-input), .loginSection ul li label input[type=password] {padding: 1em !important;font-size: 1em !important;}
+.loginSection .km-listview-wrapper+*:not(.km-listview-wrapper) input[type=submit] {padding: 0.8em !important;font-size: 1.2em !important;}
+#tabstrip-download-file .download-file-name {text-align: center;height: 110px;padding: 0 0 20px;}
+#tabstrip-download-file.modal-mess-Popup {height: 20%;}
+#tabstrip-forgot-pass .view-content { margin-top:17em;}
+#tabstrip-forgot-pass .view-content p{font-size:0.85em;}
+#dashview .tooltip span {font-size:10px; padding-bottom:6px;}
+#dashview .tooltip { width:230px;}
+#newuser {margin:12em 0;}
+.documentContent .km-listview-wrapper ul li table td:nth-child(3) a.docs-popup, .documentContent .km-listview-wrapper ul li table td:nth-child(3) a.k-state-border-down{background-size: 90%;}
+#aplicn_frm .IN3{ width:94%;}
+}
+@media (min-width:0px) and (max-width:599px) { 
+.docs-header .km-widget .docs-search { width:8%; margin:0;}
+.docs-header .km-widget .refresh-com, .docs-header .km-widget .refresh-loading { width:11%; margin:0; background-position:center 12px;}
+.docs-header .km-widget .refresh-loading { background-position: center 17px;}
+.docs-header .km-widget .docs-back { height:57px;}
+.documentContent .km-listview-wrapper ul li span {padding: 12px 10px 12px 16%;}
+.documentContent .km-listview-wrapper ul li .docx, .documentContent .km-listview-wrapper ul li .default-icon, .documentContent .km-listview-wrapper ul li .jpg, .documentContent .km-listview-wrapper ul li .doc, .documentContent .km-listview-wrapper ul li .txt, .documentContent .km-listview-wrapper ul li .xls, .documentContent .km-listview-wrapper ul li .pdf, .documentContent .km-listview-wrapper ul li .png {background-position: 20px 5px;}
+.documentContent ul.export {list-style:none;} 
+.documentContent ul.export li span {padding:12px 10px 12px 15%;background-size: 12%;}
+.documentContent ul.export li .folder {background-image: url(images/folder.png); background-repeat:no-repeat;background-position:5px 7px;}   
+.documentClick .km-view-title a span{ padding-top:13px; font-size:1.3em;}    
+.docs-header .km-widget .docs-search {width: 7%;margin: 1% 0.5% 0 2%;background-size:100%;background-position: center 7px;}
+.docs-header .km-widget #docs-filter {margin: 0.2em 0 0;}
+.km-ios .km-list > li, .km-flat .km-list > li {font-size: 1em;}
+.matches-view li .row2 p a { font-size:0.9em;}
+#dynamicCl.km-popup-wrapper {width: 220px !important;}
+/*******Android css************/
+.docs-header .km-widget .docs-docu { width:63%; font-size:1em; padding:2% 0 0;}
+.modal-mess-Popup {padding:0; width:98%; margin:0 0 0 1.3%;}
+.modal-mess-one {padding:0; width:98%; margin:0 0 0 1.3%; }
+.folder-events .scheduleSection .buttonArea .km-button{padding:0.6em 0;}
+.docs-header .km-widget .docs-popup {background-image: url(../styles/images/ic_action_overflow.png); text-indent:-9000px; width:40px; background-position:center center; height:40px; background-repeat:no-repeat; margin:0; padding:5px; border:0; background-color:transparent;  border-radius:0;}
+#blackBlk .desbrdIcon .span {/*background-image: url("images/dshbord-bgIcon.png"); background-repeat:no-repeat; */ background-size:9.7%;display: block;padding:3% 13% 5%;color: #fff;font-size: 1.2em;}
+.btngr {padding: 7px 8px;font-size: 1.1em;}
+.documentContent .km-listview-wrapper ul li .docx, .documentContent .km-listview-wrapper ul li .default-icon, .documentContent .km-listview-wrapper ul li .jpg, .documentContent .km-listview-wrapper ul li .doc, .documentContent .km-listview-wrapper ul li .txt, .documentContent .km-listview-wrapper ul li .xls, .documentContent .km-listview-wrapper ul li .pdf, .documentContent .km-listview-wrapper ul li .png {padding: 11px 0%;}
+.documentContent .km-listview-wrapper ul li .sharedfolder, .documentContent .km-listview-wrapper ul li .Folder {background-position:7px 7px;padding: 11px 14%;}
+.logLogo {margin:4% auto;height:85px;background-size:60%;}
+#tabstrip-download-file.modal-mess-Popup { padding: 0;width: 98%;margin: 0 0 0 1.3%;height:56%;}
+#tabstrip-forgot-pass .view-content {margin-top:3em;}
+#newuser ul.km-listinset li select {background-size:6%;}
+}
+@media (min-width:0px) and (max-width:580px) { 
+.logLogo {margin: 2% auto 1%;background-size: 50%;}
+.loginSection ul li label input[type=text]:not(.k-input), .loginSection ul li label input[type=password], .loginSection .km-listview-wrapper+*:not(.km-listview-wrapper) input[type=submit] {padding: 0.9em !important;font-size: 1.4em !important;font-size: 1em !important;}
+.home .km-rightitem {width:11%;}
+#blackBlk .desbrdIcon .span span {padding: 2% 0 0;}
+#blackBlk .desbrdIcon .dasimg {width:13%;padding: 0 2% 0 0 !important;}
+#blackBlk .desbrdIcon .span span {padding:0% 0 0;}
+#blackBlk .desbrdIcon {padding: 1% 1% 0 1%;}
+#blackBlk .desbrdIcon .span span { font-size:1.1em;}
+#tabstrip-Setting .docs-docu{font-size: 0.9em;padding: 0 0 0 0.5%;line-height: 2.5em;} 
+#tabstrip-Setting .docs-back {width: 10%;background-position: center 2px;}
+#tabstrip-Setting .Setting-ac, #tabstrip-Setting ul#settingpage li {padding:4% 0 4% 11%;background-size: 7%;}
+.matches-view li .row1 span {background-color: #45b508;font-size: 0.6em;}
+.matches-view li .row3 a.appy, .matches-view li .row3 a {background-size: 20%;padding:2.2em 0em 0.5em;font-size: 0.9em;}
+.matches-view li .row3 a.pending{background-size: 20%;}
+.matches-logo {background-size:20%;height: 55px;}
+.schedulePopup h3 {font-size: 17px;}
+.documentContent .km-listview-wrapper ul li .sharedfolder, .documentContent .km-listview-wrapper ul li .Folder,.documentContent .km-listview-wrapper ul li .docx, .documentContent .km-listview-wrapper ul li .default-icon, .documentContent .km-listview-wrapper ul li .jpg, .documentContent .km-listview-wrapper ul li .doc, .documentContent .km-listview-wrapper ul li .txt, .documentContent .km-listview-wrapper ul li .xls, .documentContent .km-listview-wrapper ul li .pdf, .documentContent .km-listview-wrapper ul li .png {padding: 11px 0%;}
+.reqWindow + .doc-content ol {font-size:1em;}
+#blackBlk .desbrdIcon .span {/*background-image: url("images/dshbord-bgIcon.png"); background-repeat:no-repeat; */ background-size:10%;display: block;padding:3% 13% 5%;color: #fff;font-size: 1.2em;}        
+.folder-events .km-scroll-container .closeBt span {font-size: 17px;}
+#tabstrip-download-file.modal-mess-Popup { padding: 0;width: 98%;margin: 0 0 0 1.3%;height:56%;}
+.forgtpass {font-size: 0.95em;padding-top: 10px;padding-bottom: 0px;}
+#newuser ul.km-listinset li input[type=text], #newuser ul.km-listinset li select{ padding:1.1em !important;}
+#newuser {margin: 1.5em 0;}
+#newuser .buttonArea input[type=submit] { padding:0.6em !important;}
+}
+
+@media (min-width:0px) and (max-width:533px) { 
+#blackBlk .desbrdIcon {padding: 2%;display: block;}
+#blackBlk .desbrdIcon .dasimg { width:11%; padding:0 2% 0 0 !important; }
+#blackBlk .desbrdIcon .span span { float:left; padding:2% 0 0;}
+#blackBlk .desbrdIcon .span {/*background-image: url("images/dshbord-bgIcon.png"); background-repeat:no-repeat; background-position: right 45%; background-size:9%;*/ display:block; padding:0% 0 1%; color:#fff; font-size:1.2em;}
+#stps ul li span{ font-size:13px;}
+.stpsumry h2 { font-size:1em; line-height:25px;}
+#stpSumAc { padding:15px 2% 5px;}
+#stps ul li.activ span.dnar { height:25px; background-size:33%;}
+.stpsumry p { font-size:12px; margin:0;}
+.stpcurrntAc { padding-top:10px;}
+.documentClick .km-view-title a img {padding:0px 5px 0 0; width:33%; display:block;}  
+#blackBlk .desbrdIcon .span span  {padding:2% 0 0;}
+.stpsumry p { font-size:13px;}
+.docs-header .km-widget .docs-back { width:11%; height:50px;}
+.docs-header .km-widget .docs-docu  { padding:5px 0 0; width:64%; font-size:0.9em;}
+.docs-header .km-widget .docs-search { width:7%; margin:0;background-position: center 7px;}
+.docs-header .km-widget .refresh-com { width:9%;background-position: center 7px; background-size:70%;}
+.docs-header .km-widget .refresh-loading { width:9%;}
+.documentContent .km-listview-wrapper ul li .sharedfolder, .documentContent .km-listview-wrapper ul li .Folder { padding: 5px 10px 5px 12%;background-position: 5px 7px;} 
+.documentContent .km-listview-wrapper ul li .docx, .documentContent .km-listview-wrapper ul li .default-icon, .documentContent .km-listview-wrapper ul li .jpg, .documentContent .km-listview-wrapper ul li .doc, .documentContent .km-listview-wrapper ul li .txt, .documentContent .km-listview-wrapper ul li .xls, .documentContent .km-listview-wrapper ul li .pdf, .documentContent .km-listview-wrapper ul li .png { background-position:12px 7px;padding: 5px 0%;}
+.modal-mess-Popup {padding:0; width:98%; margin:0 0 0 1.3%;}
+.modal-mess-one {padding:0; width:98%; margin:0 0 0 1.3%; }
+.km-flat .km-header .km-navbar { padding:0%;}
+#tabstrip-download-file.modal-mess-Popup { padding: 0;width: 98%;margin: 0 0 0 1.3%;}
+.logo { margin:3% auto;}
+.logLogo { margin:1% auto;height: 60px;background-size:50%;}
+html body .loginSection .km-list:not(.km-virtual-list)>li { margin-bottom:2%;}
+.schedulePopup h3 {font-size: 1.15em;}
+.schedulePopup .scheduleSection .scall-text { font-size:0.75em;}
+.documentClick .km-view-title a {padding: 5px 0px 0px;}
+.stpcurrntAc p { font-size:12px;}
+.schedulePopup .scheduleSection .km-listview-wrapper ul li .k-select, .schedulePopup .scheduleSection .km-listview-wrapper ul li + li .k-select{ background-size:8%; background-position:95% 9px;}
+.stpcurrntAc p a{ padding:3px 15px 3px 25px !important; background-size:13% !important; background-position:5px 2px !important;}
+.home .popup { width:40px; height:40px;}
+.k-notification-wrap {font-size:0.8em;}
+#tabstrip-files-events.modal-mess-Popup {}
+.docs-header .km-widget .refresh-loading{background-position: center 12px;}
+.documentContent ul.export {list-style:none;} 
+.documentContent ul.export li span {padding: 5px 10px 5px 12%;background-size: 9%;}
+.documentContent ul.export li .folder {background-image: url(images/folder.png); background-repeat:no-repeat;background-position:5px 7px;}
+.docs-header .km-widget #docs-filter {width: 80%;}
+.loginSection ul li label input[type=text]:not(.k-input), .loginSection ul li label input[type=password], .loginSection .km-listview-wrapper+*:not(.km-listview-wrapper) input[type=submit] {padding: 0.9em !important;font-size: 1.4em !important; font-size:1em !important;}
+.matches-logo {background-size: 22%;}
+#tabstrip-Setting .docs-back{width: 12%;background-position: 5px 7px; background-size: 85%;}
+#tabstrip-Setting .Setting-ac, #tabstrip-Setting ul#settingpage li{padding: 3% 0 3% 11%;background-size: 6.5%;background-position: 15px 7px;}
+#blackBlk .desbrdIcon .dasimg {width:11%;}
+#blackBlk .desbrdIcon {padding: 2%;}
+.matches-view li .row3 a.appy, .matches-view li .row3 a {background-size: 20%;padding: 1.5em 0em 0.5em;font-size: 0.8em;}
+.matches-view li .row3 a.pending{background-size: 20%;}
+#blackBlk .desbrdIcon .span {/*background-image: url("images/dshbord-bgIcon.png"); background-repeat:no-repeat; */ background-size:10%;display: block;padding:3% 13% 3%;color: #fff;font-size: 1.2em;}
+/*******Android css************/
+.btngr{ padding:7px 8px; font-size:1.1em;}
+.matches-view li .row3 a.appy, .matches-view li .row3 a {background-size: 20%;padding:2.5em 0em 0.5em;font-size: 0.8em;}
+.folder-events .km-scroll-container ul li {padding: 2px;}
+.folder-events .km-scroll-container .closeBt span {font-size: 18px;}
+#tabstrip-download-file.modal-mess-Popup { padding: 0;width: 98%;margin: 0 0 0 1.3%;height:59%;}
+#tabstrip-forgot-pass .view-content { margin-top:2em;}
+    
+ /**********Quikr***********/
+    
+ #postad1 .spnAd{line-height:52px;font-size:16px;}
+}
+@media (min-width:0px) and (max-width:410px) { 
+.logLogo {margin: 17% auto;}
+.documentContent .km-listview-wrapper ul li .docx, .documentContent .km-listview-wrapper ul li .default-icon, .documentContent .km-listview-wrapper ul li .default-icon, .documentContent .km-listview-wrapper ul li .jpg, .documentContent .km-listview-wrapper ul li .doc, .documentContent .km-listview-wrapper ul li .txt, .documentContent .km-listview-wrapper ul li .xls, .documentContent .km-listview-wrapper ul li .pdf, .documentContent .km-listview-wrapper ul li .png {background-position:16px 3px;padding: 5px 0%; background-size:50%;}
+.docs-header .km-widget .refresh-com {width: 14%;background-position: center 9px;background-size: 77%;}
+.docs-search {width: 12%;background-position: center 7px;margin: 0;}
+.docs-header .km-widget .refresh-loading {width: 15%;}
+.docs-header .km-widget .docs-back {width: 18%;}
+.docs-header .km-widget .docs-docu  { padding:3px 0 0; width:46%;}
+.docs-header .km-widget .docs-search {width: 12%;background-position: center 7px;margin: 0;}
+.matches-logo {background-size: 35%;height: 50px;background-position: 10px 12px;}
+#tabstrip-download-file.modal-mess-Popup { padding: 0;width: 98%;margin: 0 0 0 1.3%;height:33%;}
+#tabstrip-forgot-pass .view-content { margin-top:8em;} 
+#newuser ul.km-listinset li { margin-bottom:4%;}
+#newuser ul.km-listinset li input[type=text], #newuser ul.km-listinset li select{ padding:0.9em !important;}
+#newuser {margin: 2.5em 0;}
+#repypm ul li {font-size:0.85em;}
+#newuser ul.km-listinset li select {background-size:10%;}
+.documentContent .km-listview-wrapper ul li table td:nth-child(2) {height: 50px;width: 32%;}
+.documentContent .km-listview-wrapper ul li .sharedfolder, .documentContent .km-listview-wrapper ul li .Folder {padding: 11px 0%;background-size: 65%;}
+.documentContent .km-listview-wrapper ul li table td:nth-child(3) a.docs-popup, .documentContent .km-listview-wrapper ul li table td:nth-child(3) a.k-state-border-down { background-size:72%;}
+}
+@media (min-width:0px) and (max-width:370px) { 
+.logo { margin:6% auto;}
+.logLogo { margin:17% auto;height: 60px;background-size:50%;}
+html body .loginSection .km-list:not(.km-virtual-list)>li { margin-bottom:5%;}
+.documentContent .km-listview-wrapper ul li .sharedfolder, .documentContent .km-listview-wrapper ul li .Folder {padding: 5px 0;background-position: 5px 7px;}   
+.documentContent .km-listview-wrapper ul li .docx, .documentContent .km-listview-wrapper ul li .default-icon, .documentContent .km-listview-wrapper ul li .default-icon, .documentContent .km-listview-wrapper ul li .jpg, .documentContent .km-listview-wrapper ul li .doc, .documentContent .km-listview-wrapper ul li .txt, .documentContent .km-listview-wrapper ul li .xls, .documentContent .km-listview-wrapper ul li .pdf, .documentContent .km-listview-wrapper ul li .png {background-position:16px 5px;padding: 5px 0%;}
+.docs-header .km-widget .docs-back { width:18%;}
+.docs-header .km-widget .docs-docu  { padding:3px 0 0; width:44%;}
+.docs-header .km-widget .docs-search { width:12%;background-position: center 7px; margin:0;}
+.docs-header .km-widget .refresh-com { width:14%;background-position: center 9px; background-size:77%;}
+.docs-header .km-widget .refresh-loading { width:15%;}
+#blackBlk .desbrdIcon {padding:3%;display: block;}
+#blackBlk .desbrdIcon .dasimg { width:13%; padding:0 2% 0 0 !important; }
+#blackBlk .desbrdIcon .dasimg img {max-width:100%; width:100%; height:auto; display:block;}
+#blackBlk .desbrdIcon .span span { float:left; padding:2.2% 0 0;}
+#blackBlk .desbrdIcon .span {/*background-image: url("images/dshbord-bgIcon.png"); background-repeat:no-repeat; */ background-size:17%;display: block;padding:1% 17% 1%;color: #fff;font-size: 1.2em;}
+#stps ul li span{ font-size:11px;}
+.stpsumry h2 { font-size:1.1em; margin:0 1% 1%; line-height:18px;}
+#stpSumAc { padding:12px 2% 2px;}
+#stps ul li.activ span.dnar { height:20px; background-size:45%;}
+.stpsumry p { font-size:12px; margin:0 3%; height:28px; overflow:auto;}
+.btngr{padding:6px 8px;}
+.modal-mess-Popup {padding:0; width:98%; margin:0 0 0 1.3%; }
+.modal-mess-one {padding:0; width:98%; margin:0 0 0 1.3%; }
+.reqWindow + .doc-content ol {font-size:1em;}
+.km-flat .km-header .km-navbar { padding:0%;}
+#tabstrip-download-file .download-file-name .docx, #tabstrip-download-file .download-file-name .jpg, #tabstrip-download-file .download-file-name .doc, #tabstrip-download-file .download-file-name .txt, #tabstrip-download-file .download-file-name .xls, #tabstrip-download-file .download-file-name .pdf, #tabstrip-download-file .download-file-name .png {padding:35% 0 0;background-size:18%;}
+#tabstrip-download-file.modal-mess-Popup { padding: 0;width: 98%;margin: 0 0 0 1.3%;height: 33%;}
+#tabstrip-download-file .download-file-name .unkown {padding: 25% 0 0;}
+#tabstrip-download-file .download-file-name .unkown, #tabstrip-download-file .download-file-name .jpeg, #tabstrip-download-file .download-file-name .gif, #tabstrip-download-file .download-file-name .ppt, #tabstrip-download-file .download-file-name .png, #tabstrip-download-file .download-file-name .txt, #tabstrip-download-file .download-file-name .docx, #tabstrip-download-file .download-file-name .xls, #tabstrip-download-file .download-file-name .xlsx, #tabstrip-download-file .download-file-name .rtf, #tabstrip-download-file .download-file-name .png, #tabstrip-download-file .download-file-name .pptx {}
+.documentClick .km-view-title a{padding:4px 0px 0px;width: 56%;}
+.schedulePopup .scheduleSection .km-listview-wrapper ul li .k-select{ background-size:10%; background-position:95% 12px;}
+.schedulePopup .scheduleSection .km-listview-wrapper ul li + li .k-select{ background-size:14%; background-position:95% 13px;}
+.docs-header .km-widget #docs-filter .km-filter-wrap { background-position:5px 39px; margin:0; padding:0; background-size:97%; width:90%;}
+.docs-header .km-widget #docs-filter .km-filter-wrap input {padding:0 0 0 10px; }
+.documentContent ul.export {list-style:none;} 
+.documentContent ul.export li span {padding: 5px 10px 5px 22%;background-size: 17%;}
+.documentContent ul.export li .folder {background-image: url(images/folder.png); background-repeat:no-repeat;background-position:5px 7px;}
+.documentClick .km-view-title a img {padding: 0px 5px 0 0;width: 36%;}
+.stpcurrntAc p {padding: 6px 0px 4px 0px;}
+.docs-header .km-widget #docs-filter {width: 77%;}
+.matches-logo {background-size:35%;height: 50px;background-position: 10px 12px;}
+.loginSection ul li label input[type=text]:not(.k-input), .loginSection ul li label input[type=password], .loginSection .km-listview-wrapper+*:not(.km-listview-wrapper) input[type=submit] {padding: 0.9em !important;font-size: 1.4em !important; font-size:1em !important;}
+.home .km-rightitem {width: 15%;}
+#tabstrip-Setting .docs-back {width: 15%;background-size: 90%; height:40px;background-position: 5px 5px;}
+.matches-view li .row3 a.pending {padding: 1.5em 0em 0.5em;font-size:0.8em; line-height:15px;}
+/*******Android css************/
+#blackBlk .desbrdIcon .span {background-size: 45px;display: block;padding: 15px 17%;color: #fff;font-size: 1.3em;background-position: left 4px;}
+.matches-view li .row3 a.appy, .matches-view li .row3 a {background-size: 20%;padding: 1.4em 0em 0.5em;font-size: 0.8em;}
+#tabstrip-Setting .Setting-ac {padding: 4% 0 4% 16%;background-size: 8.5%;background-position: 20px 7px;}
+#tabstrip-Setting ul#settingpage li {padding: 4% 0 4% 16%;background-size: 8.5%;background-position: 20px 7px;}
+.folder-events .km-scroll-container ul li {padding: 2px;}
+.forgtpass {font-size: 1em;padding-top: 15px;padding-bottom: 0px;}
+#repypm ul li {font-size:0.8em;}
+#newuser {margin: 1.5em 0;}
+.documentContent .km-listview-wrapper ul li table td:nth-child(3) a.docs-popup, .documentContent .km-listview-wrapper ul li table td:nth-child(3) a.k-state-border-down { background-size:76%;}
+}
+
+@media (min-width:0px) and (max-width:320px) { 
+#blackBlk .desbrdIcon .dasimg {width:19%;}
+#blackBlk .desbrdIcon {padding: 2%;}
+#blackBlk .desbrdIcon .span span {padding:0% 0 0;}
+#tabstrip-Setting .docs-docu{padding: 5px 0 0;width: 44%; } 
+#tabstrip-Setting .Setting-ac {padding: 4% 0 4% 18%;background-size: 8.5%;background-position: 20px 7px;}
+ #tabstrip-Setting ul#settingpage li {padding: 4% 0 4% 18%;background-size: 8.5%;background-position: 20px 7px;}
+#tabstrip-Setting .docs-back {width:18%;background-size:95%; height:50px;background-position: 5px 5px; background-position:left 7px;}
+#blackBlk .desbrdIcon .span {/*background-image: url("images/dshbord-bgIcon.png"); background-repeat:no-repeat; */ background-size:42px;display: block;padding: 15px 17%;color: #fff;font-size: 1.2em;background-position: left 4px;}
+.documentContent .km-listview-wrapper ul li .docx, .documentContent .km-listview-wrapper ul li .default-icon, .documentContent .km-listview-wrapper ul li .default-icon, .documentContent .km-listview-wrapper ul li .jpg, .documentContent .km-listview-wrapper ul li .doc, .documentContent .km-listview-wrapper ul li .txt, .documentContent .km-listview-wrapper ul li .xls, .documentContent .km-listview-wrapper ul li .pdf, .documentContent .km-listview-wrapper ul li .png {background-position: 14px 4px;padding: 5px 0;}
+
+ /*****************************************************/
+    #postad1 .spnAd{line-height:52px;font-size:16px;}
+}

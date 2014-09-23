@@ -1,0 +1,72 @@
+body {
+}
+
+#postad1 .nvbar,#home .nvbar,#postAd2 .nvbar{height:45px;background-color:white;border-bottom:2px solid #0099FF}
+#postad1 .btn,#home .btn,#postAd2 .btn{background-color:white;border:0px;margin-left:-10px;margin-top:5px;}
+#postad1 .spnTitle,#home .spnTitle,#postAd2 .spnTitle{line-height:50px;}
+#postad1 .km-content,#home .km-content,#postAd2 .km-content{background-color:#E8EAEB}
+#home .img{width:22px;height:22px;}
+#home .img1{width:26px;height:26px;margin-right:-15px;}
+h3{color:#0099FF;}
+
+.txtbox{width:100%;height:40px;padding-left:7px;border:1px solid #ccc}
+.txtbox:focus{border:2px solid #FF9900;}
+label.error {color: red;font-size:14px;}
+
+.txtarea{width:100%;height:110px;padding-left:6px;border:1px solid #ccc}
+.txtarea:focus{border:2px solid #FF9900;}
+
+#postAdfrm .AdWidh,#homeCont .AdWidh,#postAdfrm2 .AdWidh{width:98%;height:auto;margin:0px auto;margin-top:5px;}
+#homeCont .postDiv{width:100%;height:55px;border:1px solid #ccc;margin-top:10px;box-shadow:1px 1px 1px 1px #ccc;background-color:white}
+.postDiv .adDiv{width:150px;height:40px;float:right;display:block;background-color:#F6E104;box-shadow:1px 1px 1px 1px #E1B70D;margin:5px 8px 0px 0px;}
+.postDiv .adDiv p{font-size:18px;line-height:5px;text-align:center;font-weight:700;color:#000000;}
+.postDiv .titleDiv{float:left;width:140px;height:100%;}
+.postDiv .titleDiv p {font-size: 17px;margin: 15px 0px 0px 6px;font-weight: 700;}
+.AdWidh h3{margin:8px 0px 0px 0px;}
+
+#cameraDv{width:100%;height:auto;}
+#cameraDv .pic{width: 100%;height: 80px;display: block;margin: 12px 0px 0px -6px;}
+.pic .postImage{width:33%;height:80px;float:left;display:none}
+.postImage .imgDiv{float:left;width:85%;height:auto;margin-left:11px;}
+.postImage .imgDiv img{width:100%; height:75px;display:none}
+#smallImage1,smallImage2{}
+#cameraDv h3{margin:10px 0px 0px 5px;}
+#cameraDv p{font-size:12px;color:red;font-weight:bold;margin:10px 0px 0px 5px;display:none}
+#fldDv .frmfld1 h3{margin:4px 0px 0px 5px;}
+#fldDv .frmfld1 p{margin:10px 5px 0px 5px}
+
+#homeCont .itemDiv{width:100%;height:auto;margin:-4px 0px 0px 0px}
+.itemDiv .itmRow{width:100%;height:112px;margin:8px 0px 0px 2px;display:block;}
+.itmRow .itmDiv1{width: 32%;height: 112px;float: left;margin: 4px 2px 0px 0px;}
+.itmRow .itmDiv2{width: 32%;height: 112px;float: left;margin: 4px 0px 0px 3px;}
+.itmRow .itmDiv3{width: 32%;height: 112px;float: left;margin: 4px 3px 0px 4px;}
+
+.itemDiv .itmRow1,.itemDiv .itmRow2,.itemDiv .itmRow3{width:100%;height:112px;display:block;}
+.itmRow1 .itmDiv1,.itmRow2 .itmDiv1,.itmRow3 .itmDiv1{width: 32%;height: 112px;float: left;margin: 4px 2px 0px 0px;}
+.itmRow1 .itmDiv2,.itmRow2 .itmDiv2,.itmRow3 .itmDiv2{width: 32%;height: 112px;float: left;margin: 4px 0px 0px 3px;}
+.itmRow1 .itmDiv3,.itmRow2 .itmDiv3,.itmRow3 .itmDiv3{width: 32%;height: 112px;float: left;margin: 4px 3px 0px 4px;}
+.itemDiv .itmRow1,.itemDiv .itmRow2,.itemDiv .itmRow3{margin:4px 0px 0px 2px;}
+.itemDiv img{width:100%;height:100%;border:1px solid #ccc}
+.adDiv a{text-decoration:none}
+
+.recom{width:100%;height:auto;}
+.recom .altTxt{width:84%;float:left;}
+.recom .altLog{width:16%;float:right}
+.recom h3{margin:35px 0px 0px 0px;}
+.altLog img{width:45px;height:45px;float:right}
+.recom .altDiv{width:100%;display:block;margin:0px 0px 0px 0px;}
+.altTxt span{font-size:14px;}
+#fldDv .dropfld,.catDv .dropfld{width:100%;background-color: white;}
+#fldDv h3{margin-top:-12px;}
+#fldDv .frmfld1{width:100%;}
+#cityId .disp{display:none}
+
+#postAdfrm2 .AdWidh h3{margin:10px 0px 20px 5px}
+.AdWidh .catDv,.AdWidh .contDv{width:100%;height:auto;margin-top:-10px;}
+.catDv p,.contDv p{margin:10px 5px 0px 5px}
+#categorizedFld{width:100%;height:auto;margin:17px 0px 0px -5px;display:none}
+#categorizedFld h4{color:#000000;margin:0px 0px 0px 18px}
+#categorizedFld .dropfld{width:100%;background-color: white;}
+#categorizedFld span{font-size:14px;}
+#categorizedFld span#sellText,#categorizedFld span#buyText{font-weight:bold}
+.frmfld1 .subBTN,.contDv .subBTN{width:100%;height:40px;font-size:18px;font-weight:bold;background-color:#F6E104;margin:15px 0px 0px 0px}
