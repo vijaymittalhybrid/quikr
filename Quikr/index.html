@@ -213,58 +213,50 @@
                    
                    <div id="categorizedFld">
                        <p>
-                           <input type="radio" name="product" value="sell" />
+                           <input type="radio" name="product" value="sell" id="sell" data-bind="value:productSell" required/>
                            <span>
                                I want to sell <span id="sellText"></span>
                            </span>
                        </p>
                        <p>
-                           <input type="radio" name="product" value="Buy"/>
+                           <input type="radio" name="product" value="Buy" id="sell" data-bind="value:productBuy" required/>
                            <span>
                                I want to Buy <span id="buyText"></span>
                            </span>
                        </p>
                        <h4>You are</h4>
                        <p>
-                           <input type="radio" name="person" value="Individual"/>
+                           <input type="radio" name="person" value="Individual" data-bind="value:customerIndividual" id="individual" required/>
                            <span>
                                Individual
                            </span>
                        </p>
                        <p>
-                           <input type="radio" name="person" value="Dealer"/>
+                           <input type="radio" name="person" value="Dealer" data-bind="value:customerDealer" id="dealer" required/>
                            <span>
                                Dealer
                            </span>
                        </p>
                         <h4>Condition</h4>
                        <p>
-                           <input type="radio" name="condn" value="used"/>
+                           <input type="radio" name="condn" value="used" data-bind="value:condnUsed" id="used" required/>
                            <span>
                                Used
                            </span>
                        </p>
                        <p>
-                           <input type="radio" name="condn" value="new"/>
+                           <input type="radio" name="condn" value="new" data-bind="value:condnNew" id="new" required/>
                            <span>
                                New
                            </span>
                        </p>
-                       <p>
+                       <p style="display:none">
                        	 <input name="brand" id="brand" data-bind="value:brand" class="dropfld" orignal-title="Brand" required/>
                        </p>
                        <p>
-                       	 <input type="text" name="price" id="price" data-bind="value:price" placeholder="Price" maxlength="10" style="width:100%;" class="txtbox" orignal-title="Mobile Number" required/>
+                       	 <input type="text" name="price" id="price" data-bind="value:price" placeholder="Price" class="txtbox" orignal-title="Mobile Number" required/>
                        </p>
                    </div>
-                   <div id="car">
-                       
-                   </div>
-                   
-                   
-                   
-                   
-                   
                    
                    <h3>Your Contact Information</h3>
                     <div class="contDv">
@@ -279,7 +271,7 @@
                         </p>
                          <p>
                             <input type="Submit"  data-role="button" data-bind="click:dropDownvalidationSecondFormField"  value="Post your Ad" class="subBTN"/>
-                         </p>
+                         </p><br>
                     </div>
                </div>
            </form>

@@ -14,11 +14,17 @@
         category:0,
         subcategory:0,
         hideVal:'',
-        
+        productSell:'',
+        productBuy:'',
+        customerIndividual:'',
+        customerDealer:'',
+        condnUsed:'',
+        condnNew:'',
         show:function(){
            
             
             $(".km-scroll-container").css("-webkit-transform", "");
+            
             var state_dataSource = new kendo.data.DataSource({
                 transport:{
                     read:{
@@ -110,9 +116,28 @@
             
             $.validator.addMethod("lettersonly", 
             	function(value, element) {
-             		 return this.optional(element) || /^[a-z]+$/i.test(value);
+             		 return this.optional(element) || /^[a-z ]+$/i.test(value);
             	}
             ); 
+            
+            $('#price').keyup(function(event) {
+
+                // skip for arrow keys
+                if(event.which >= 37 && event.which <= 40){
+                    event.preventDefault();
+                }
+
+                $(this).val(function(index, value) {
+                    value = value.replace(/,/g,'');
+                    return numberWithCommas(value);
+                });
+            });
+            
+            function numberWithCommas(x) {
+                var parts = x.toString().split(".");
+                parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                return parts.join(".");
+            }
             
             $("#postAdfrm").validate({	//validation for postad 1st form
                 rules:{
@@ -164,6 +189,10 @@
                         required:true,
                         number:true,
                         minlength:10
+                    },
+                    price:{
+                        required:true,
+                        number:true
                     }
                 },
                 messages:{
@@ -179,6 +208,10 @@
                         required:"Please Enter Mobile number.",
                         number:"Please Enter 10 digit mobile number.",
                         minlength:"Please enter at least 10 number."
+                    },
+                    price:{
+                        required:"Please enter product Price.",
+                        number:"Please enter amount in numaric format."
                     }
                     
                 },
@@ -191,14 +224,15 @@
         
         localityListView:function(e){			 //Locality list view Function
             
-            $("#address").css("display","none");
             if(e.item.index() === 0 || e.item.index() === '0')
             {
                 $("#cityId").closest(".k-widget").css("display","none");
-                 $("#address").css("display","none");
+                $("#address").css("display","none");
+                $("#address:input[name='address']").val('');
             }
             else
             {
+                console.log("hjgjg");
                     $("#cityId").kendoDropDownList({
                         optionLabel: "Choose City",
                         cascadeFrom: "state",
@@ -245,6 +279,19 @@
         
         dropDownvalidationSecondFormField:function(){			//dropdownlist validation function
             
+            
+            
+             if(document.getElementById('sell').checked)
+            {
+             console.log(document.getElementById('sell').checked);   
+            }
+            else
+            {
+               console.log(document.getElementById('sell').checked);   
+                console.log("ok");
+            }
+            
+            
              var dropdownlist1 = $("#category").data("kendoDropDownList");
              var dropdownlist2 = $("#subcategory").data("kendoDropDownList");
           
@@ -266,6 +313,7 @@
         },
         
         createHtml:function(item){
+            $("#categorizedFld").css("display","block");
             $("#sellText").html(item);
             $("#buyText").html(item);
         },
@@ -280,32 +328,61 @@
             dataParam['state'] =that.get("state");
             dataParam['city'] =that.get("city");
             dataParam['address'] =that.get("address").trim();
-            dataParam['imageSrc'] = $("#smallImage").attr('src');
+            dataParam['imageSrc1'] = $("#smallImage1").attr('src');
+            dataParam['imageSrc2'] = $("#smallImage2").attr('src');
             
             console.log(dataParam);
             apps.navigate("#postAd2");
         },
         
+        
         postadSecondFormData:function(){  
             
-            var status = $("#postAdfrm2").valid();
+            /*var status = $("#postAdfrm2").valid();
             if(status === false)
             {
                 return false;
             }
             else
             {
-                 var dataParam={};
+                
+            }*/
+            app.postService.viewModel.postAdDataInsert();
+        }, 
+        
+        postAdDataInsert:function(){
+            
+                var dataParam={};
                 var that = this;
-                dataParam['name']=that.get("name");
+            
+                /*dataParam['adtitle'] = that.get("adtitle").trim();
+                dataParam['addescript'] =that.get("addescript").trim();
+                dataParam['state'] =that.get("state");
+                dataParam['city'] =that.get("city");
+                dataParam['address'] =that.get("address").trim();
+                dataParam['imageSrc1'] = $("#smallImage1").attr('src');
+                dataParam['imageSrc2'] = $("#smallImage2").attr('src');
+                */
+            if(document.getElementById('sell').checked)
+            {
+             console.log(document.getElementById('sell').checked);   
+            }
+            else
+            {
+               console.log(document.getElementById('sell').checked);   
+                console.log("ok");
+            }
+               
                 dataParam['category'] =that.get("category");
                 dataParam['subcategory'] =that.get("subcategory");
+                console.log("hi"+$("#sell").checked);
+                dataParam['imageSrc2'] = $("#smallImage2").attr('src');
+                dataParam['name']=that.get("name");
                 dataParam['email'] =that.get("email").trim();
                 dataParam['mobile'] =that.get("mobileNumber");
+            
                 console.log(dataParam);
-                //apps.navigate("#postad2");
-            }
-        }, 
+        },
         
         backBTN:function(){
             navigator.notification.confirm("Would you like to cancel posting?",function(confirm){
@@ -352,7 +429,7 @@
                     }
                     
                 }
-            },'Exit','Yes,No');
+            },'Delete Image','Yes,No');
             
            
             

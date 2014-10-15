@@ -39,8 +39,10 @@
     "org.apache.cordova.network-information",
     "org.apache.cordova.dialogs",
     "org.apache.cordova.splashscreen",
+    "com.phonegap.plugins.sqlite",
     "org.apache.cordova.statusbar",
-    "org.apache.cordova.vibration"
+    "org.apache.cordova.vibration",
+    "com.telerik.plugins.nativepagetransitions@0.1.2"
   ],
   "AndroidPermissions": [
     "android.permission.ACCESS_COARSE_LOCATION",
